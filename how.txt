@@ -1,0 +1,78 @@
+
+Home@DESKTOP-QHFAG5B MINGW64 ~
+$ git --version
+git version 2.28.0.windows.1
+
+Home@DESKTOP-QHFAG5B MINGW64 ~
+$ git help config
+
+Home@DESKTOP-QHFAG5B MINGW64 ~
+$ mkdir ecommerce
+
+Home@DESKTOP-QHFAG5B MINGW64 ~
+$ cd ecommerce
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce
+$ git init
+Initialized empty Git repository in C:/Users/Home/ecommerce/.git/
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$  git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git add demo.txt
+fatal: pathspec 'demo.txt' did not match any files
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git add demo.txt
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git commit -m "comitting a text file"
+[master (root-commit) 1dbf671] comitting a text file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$  git config --global user.useername Amrutha26
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git remote add origin https://github.com/Amrutha26/test.git
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Amrutha26/test.git/'
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 112.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Amrutha26/test.git
+ * [new branch]      master -> master
+
+Home@DESKTOP-QHFAG5B MINGW64 ~/ecommerce (master)
+$
